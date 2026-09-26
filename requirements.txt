@@ -2,5 +2,8 @@ streamlit
 python-dotenv
 pinecone
 sentence-transformers
-google-genai
+groq
 pypdf
+pillow
+pytesseract
+langchain-core
