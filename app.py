@@ -290,7 +290,11 @@ groq_client = Groq(api_key=GROQ_API_KEY)
 EMBEDDING_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
 LLM_MODEL_NAME = "openai/gpt-oss-120b"
 
-embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+@st.cache_resource(show_spinner="🧠 Loading embedding model...")
+def load_embedding_model():
+    return SentenceTransformer(EMBEDDING_MODEL_NAME)
+
+embedding_model = load_embedding_model()
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
