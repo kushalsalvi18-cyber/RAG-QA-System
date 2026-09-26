@@ -7,3 +7,6 @@ pypdf
 pillow
 pytesseract
 langchain-core
+torch
+torchvision
+transformers
