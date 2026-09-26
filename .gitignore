@@ -1,0 +1,11 @@
+﻿.env
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.png
+documents/*.pdf
+documents/*.txt
+app_backup.py
+app_multilingual_backup.py
+app_ui_backup.py
