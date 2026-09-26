@@ -3,6 +3,9 @@ import io
 import uuid
 
 import streamlit as st
+
+st.write("APP STARTED SUCCESSFULLY")
+
 from dotenv import load_dotenv
 from pinecone import Pinecone
 from sentence_transformers import SentenceTransformer
