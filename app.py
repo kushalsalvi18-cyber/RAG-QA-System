@@ -21,7 +21,7 @@ from langchain_core.prompts import ChatPromptTemplate
 # =========================================================
 
 st.set_page_config(
-    page_title="KushalRAG AI | Smart PDF Q&A",
+    page_title="RAG AI | Smart PDF Q&A",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -297,7 +297,9 @@ LLM_MODEL_NAME = "openai/gpt-oss-120b"
 def load_embedding_model():
     return SentenceTransformer(EMBEDDING_MODEL_NAME)
 
-embedding_model = load_embedding_model()
+embedding_model = load_embedding_model(
+    
+)
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
@@ -540,7 +542,7 @@ st.markdown(
         <div class="hero-left">
             <div class="hero-icon-bg">🤖</div>
             <div>
-                <div class="hero-title">KushalRAG AI System</div>
+                <div class="hero-title">RAG AI System</div>
                 <div class="hero-subtitle">Ask intelligent questions from your PDF documents using Retrieval-Augmented Generation</div>
             </div>
         </div>
